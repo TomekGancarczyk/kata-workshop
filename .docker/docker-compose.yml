@@ -1,0 +1,11 @@
+services:
+  doom:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    ports:
+      - "6080:6080"
+    shm_size: 256m
+    environment:
+      - RESOLUTION=800x600
+    restart: unless-stopped

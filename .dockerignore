@@ -1,0 +1,16 @@
+# Ignore local build artifacts
+build/
+*.o
+*.a
+
+# Ignore git
+.git/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore devcontainer (we have our own docker setup)
+.devcontainer/
